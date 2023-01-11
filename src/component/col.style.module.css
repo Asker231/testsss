@@ -1,0 +1,29 @@
+.wrap{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.wrap>.firts,.next,.second{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+.firts>.top,.midle,.bot{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+.next>.top,.midle,.bot{
+     display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    
+}.second>.top,.midle,.bot{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     gap: 5px;
+}
+

@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { Button } from '@mui/material';
+import React, { useEffect, useState } from 'react'
 import './App.css';
+import Column from './component/Column';
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="wrap">
+        <h1>Регистрация</h1>
+        <Column/>
+        <div className='bot'>
+             <input type="file"/>
+              <Button variant="contained">Регистрация</Button>
+        </div>
+        </div>
     </div>
   );
 }
